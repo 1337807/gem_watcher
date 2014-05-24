@@ -1,7 +1,14 @@
 class ListsController < ApplicationController
   def create
-    List.create(list_params.merge(user: current_user))
-    redirect_to :root
+    @list = List.new(list_params.merge(user: current_user))
+
+    if @list.save
+      redirect_to :root
+    else
+      flash[:error] = []
+      @list.errors.each { |error, message| flash[:error] << message }
+      render 'welcome/index'
+    end
   end
 
   def destroy
