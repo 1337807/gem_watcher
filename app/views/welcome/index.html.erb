@@ -5,7 +5,9 @@
     <p>If you'd like you can point gem watcher to a file online. We'll extract your list from there and check that file for changes every minute.</p>
     <% if current_user %>
       <%= render 'lists/form' %>
-      <%= render 'lists/existing' if @lists %>
+      <% if @lists %>
+        <%= render 'lists/existing' %>
+      <% end %>
     <% else %>
       <%= link_to 'Create an account to get started', new_user_registration_path, class: 'btn btn-success btn-lg' %>
     <% end %>
