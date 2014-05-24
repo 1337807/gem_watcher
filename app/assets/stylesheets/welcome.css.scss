@@ -1,3 +1,18 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+a.list-dismiss {
+  color: #9a9a9a;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-left: -30px;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+a.list-dismiss:hover {
+  color: #5b5b5b;
+  text-decoration: none;
+}
