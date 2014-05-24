@@ -5,7 +5,7 @@
     <p>If you'd like you can point gem watcher to a file online. We'll extract your list from there and check that file for changes every minute.</p>
     <% if current_user %>
       <%= render 'lists/form' %>
-      <% if @lists %>
+      <% if @lists.any? %>
         <%= render 'lists/existing' %>
       <% end %>
     <% else %>
