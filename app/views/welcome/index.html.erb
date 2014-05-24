@@ -9,7 +9,8 @@
         <%= render 'lists/existing' %>
       <% end %>
     <% else %>
-      <%= link_to 'Create an account to get started', new_user_registration_path, class: 'btn btn-success btn-lg' %>
+      <%= link_to 'Create an account to get started', new_user_registration_path, class: 'btn btn-success btn-lg' %><br/>
+      <h4>Already have an account? <%= link_to 'Sign in', new_user_session_path %></h4>
     <% end %>
   </div>
 </div>

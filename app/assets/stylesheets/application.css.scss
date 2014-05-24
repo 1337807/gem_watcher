@@ -19,3 +19,28 @@
 div.navbar {
   margin-bottom: 0px;
 }
+
+a {
+  color: #1c83bf;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #66b8e7;
+}
+a:visited {
+  color: #6596b2;
+}
+a:visited:hover {
+  color: #66b8e7;
+}
+
+a.btn {
+  text-decoration: none;
+}
+a.btn:hover {
+  color: white;
+}
+a.btn:visited {
+  color: white;
+}
