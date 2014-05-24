@@ -47,4 +47,7 @@ group :development, :test do
   gem "poltergeist"
   gem "rspec-rails"
   gem "guard-rspec"
+  gem "pry"
+  gem "better_errors"
+  gem "binding_of_caller"
 end
