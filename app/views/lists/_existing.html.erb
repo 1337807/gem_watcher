@@ -1,9 +1,11 @@
-<h3>Existing lists:</h3>
-<% @lists.each do |list| %>
-  <%= link_to 'X', list_path(list.id), class: 'pull-right btn btn-primary', method: :delete, data: { confirm: "Are you sure?" } %>
-  <pre><%= list.body %></pre>
-  <% if list.url %>
-    <h5>Updated <%= time_ago_in_words(list.updated_at) %> ago from <%= list.url %></h5>
-    <br/>
+<% if @lists && @lists.any? %>
+  <h3>Existing lists:</h3>
+  <% @lists.each do |list| %>
+    <%= link_to 'X', list_path(list.id), class: 'list-dismiss pull-right', method: :delete, data: { confirm: "Are you sure?" } %>
+    <pre><%= list.body %></pre>
+    <% if list.url %>
+      <h5>Updated <%= time_ago_in_words(list.updated_at) %> ago from <%= list.url %></h5>
+      <br/>
+    <% end %>
   <% end %>
 <% end %>
