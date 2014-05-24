@@ -1,8 +1,13 @@
 <div class='jumbotron'>
   <div class='container'>
     <h1>Gem Watcher</h1>
-    <p>Give Gem Watcher a list of gems you'd like to monitor and we'll send you an email whenever one of them is updated.</p>
-    <p>If you'd like you can point Gem Watcher to a file online and we'll extract and monitor your list from there.</p>
-    <%= link_to 'Create an account to get started', new_user_registration_path, class: 'btn btn-success btn-lg' %>
+    <p>Give gem watcher a list of gems you'd like to monitor and we'll send you an email whenever one of them is updated.</p>
+    <p>If you'd like you can point gem watcher to a file online. We'll extract your list from there and check that file for changes every minute.</p>
+    <% if current_user %>
+      <%= render 'lists/form' %>
+      <%= render 'lists/existing' if @lists %>
+    <% else %>
+      <%= link_to 'Create an account to get started', new_user_registration_path, class: 'btn btn-success btn-lg' %>
+    <% end %>
   </div>
 </div>
