@@ -1,4 +1,4 @@
 class GemUpdater
-  def update_gems!
+  def self.update_gems!
   end
 end
