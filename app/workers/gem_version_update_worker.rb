@@ -3,6 +3,6 @@ class GemVersionUpdateWorker
 
   def perform
     # update each gem version with the latest from rubygems
-    GemUpdater.update_gems!
+    GemUpdater.update_gem_versions!
   end
 end
