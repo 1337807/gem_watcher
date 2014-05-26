@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'sidekiq/testing'
 
 describe GemVersionUpdateWorker do
-  it "should update a gem with a new version" do
+  xit "should update a gem with a new version" do
     gem = Fabricate(:jem, name: 'rake', version: '0.1')
 
     Sidekiq::Testing.inline! do

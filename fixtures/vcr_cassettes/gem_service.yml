@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rubygems.org/api/v1/gems/rake.yaml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Gems 0.8.3
+      - Ruby
+      Authorization:
+      - da8c9679bef31e31cf3f36bc1180fa70
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - '30'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 26 May 2014 18:55:06 GMT
+      Content-Type:
+      - text/yaml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Content-Disposition:
+      - attachment
+      Content-Transfer-Encoding:
+      - binary
+      Cache-Control:
+      - private
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      - IE=Edge,chrome=1
+      Etag:
+      - '"218fc9d00730b9e530b9583840d94374"'
+      Set-Cookie:
+      - remember_token=; path=/; expires=Tue, 26-May-2015 18:55:06 GMT; secure
+      X-Request-Id:
+      - 696992845e93f1b73435a8f2bc96a53f
+      X-Runtime:
+      - '0.035422'
+      X-Rack-Cache:
+      - miss
+    body:
+      encoding: UTF-8
+      string: |
+        ---
+        name: rake
+        downloads: 48746116
+        version: 10.3.2
+        version_downloads: 281257
+        platform: ruby
+        authors: Eric Hodel, Jim Weirich
+        info: ! "Rake is a Make-like program implemented in Ruby. Tasks and dependencies are\nspecified
+          in standard Ruby syntax.\n\nRake has the following features:\n\n* Rakefiles (rake's
+          version of Makefiles) are completely defined in\n  standard Ruby syntax.  No XML
+          files to edit.  No quirky Makefile\n  syntax to worry about (is that a tab or a
+          space?)\n\n* Users can specify tasks with prerequisites.\n\n* Rake supports rule
+          patterns to synthesize implicit tasks.\n\n* Flexible FileLists that act like arrays
+          but know about manipulating\n  file names and paths.\n\n* A library of prepackaged
+          tasks to make building rakefiles easier. For example,\n  tasks for building tarballs
+          and publishing to FTP or SSH sites.  (Formerly\n  tasks for building RDoc and Gems
+          were included in rake but they're now\n  available in RDoc and RubyGems respectively.)\n\n*
+          Supports parallel execution of tasks."
+        licenses:
+        - MIT
+        project_uri: http://rubygems.org/gems/rake
+        gem_uri: http://rubygems.org/gems/rake-10.3.2.gem
+        homepage_uri: https://github.com/jimweirich/rake
+        wiki_uri: ''
+        documentation_uri: https://github.com/jimweirich/rake
+        mailing_list_uri: ''
+        source_code_uri: https://github.com/jimweirich/rake
+        bug_tracker_uri: https://github.com/jimweirich/rake/issues
+        dependencies:
+          development:
+          - name: hoe
+            requirements: ~> 3.7
+          - name: minitest
+            requirements: ~> 5.2
+          - name: rdoc
+            requirements: ~> 4.0
+          runtime: []
+    http_version: 
+  recorded_at: Mon, 26 May 2014 18:55:06 GMT
+recorded_with: VCR 2.5.0
