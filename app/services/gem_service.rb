@@ -1,4 +1,4 @@
 class GemService
-  def fetch_version(gem_name)
+  def fetch_gem_data(gem_name)
   end
 end
