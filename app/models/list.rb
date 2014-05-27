@@ -1,5 +1,7 @@
 class List < ActiveRecord::Base
   belongs_to :user
+  has_many :list_gems
+  has_many :jems, through: :list_gems
 
   validate :either_body_or_url
 

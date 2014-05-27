@@ -23,4 +23,18 @@ describe List do
   it "can't be created without either a body or a url" do
     List.create
   end
+
+  it "updates the list immediately after creation"
+
+  context "List#update!" do
+    it "updates and parses the body if the list has a url"
+  end
+
+  context "List#update_body!" do
+    it "updates the body from the url"
+  end
+
+  context "List#parse_body!" do
+    it "parses the body into gems and gem_lists"
+  end
 end
