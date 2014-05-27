@@ -31,6 +31,13 @@ ActiveRecord::Schema.define(version: 20140527050256) do
     t.text     "homepage_uri"
   end
 
+  create_table "list_gems", force: true do |t|
+    t.integer  "list_id"
+    t.integer  "jem_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "lists", force: true do |t|
     t.text     "body"
     t.datetime "created_at"
