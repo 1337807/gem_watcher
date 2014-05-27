@@ -26,15 +26,33 @@ describe List do
 
   it "updates the list immediately after creation"
 
-  context "List#update!" do
-    it "updates and parses the body if the list has a url"
+  context "List.update_all!" do
+    it "updates the body of each list from the url" do
+      VCR.use_cassette('list_update') do
+        list = Fabricate(:list, url: 'https://gist.githubusercontent.com/1337807/3ee043101ce996e97478/raw/e0485c8b34ced8ce153f0ef3cc1f395c30ee12dd/gem_watcher_test_list')
+        List.update_all!
+        expect(list.jems.map(&:name)).to eql(['rake', 'rack'])
+        expect(ListGem.count).to eql(2)
+      end
+    end
   end
 
   context "List#update_body!" do
-    it "updates the body from the url"
+    it "updates the body from the url" do
+      VCR.use_cassette('list_update_body') do
+        list = Fabricate(:list, url: 'https://gist.githubusercontent.com/1337807/3ee043101ce996e97478/raw/e0485c8b34ced8ce153f0ef3cc1f395c30ee12dd/gem_watcher_test_list')
+        list.update_body!
+        expect(list.body).to eql("rake\nrack")
+      end
+    end
   end
 
   context "List#parse_body!" do
-    it "parses the body into gems and gem_lists"
+    it "parses the body into gems and gem_lists" do
+      list = Fabricate(:list, body: "a\nb\nc\n")
+      list.parse_body!
+      expect(Jem.all.map(&:name)).to eql(['a', 'b', 'c'])
+      expect(ListGem.count).to eql(3)
+    end
   end
 end

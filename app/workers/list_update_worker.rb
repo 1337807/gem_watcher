@@ -2,6 +2,6 @@ class ListUpdateWorker
   include Sidekiq::Worker
 
   def perform
-    # update each list
+    List.update_all!
   end
 end

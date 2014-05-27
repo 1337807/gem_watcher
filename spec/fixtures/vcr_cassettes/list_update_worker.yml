@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gist.githubusercontent.com/1337807/3ee043101ce996e97478/raw/e0485c8b34ced8ce153f0ef3cc1f395c30ee12dd/gem_watcher_test_list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 27 May 2014 06:42:08 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src *; script-src 'self' render.github.com render.githubusercontent.com
+        https://gist-assets.github.com *.google-analytics.com https://collector-cdn.github.com;
+        frame-src 'self' render.github.com render.githubusercontent.com https://gist-assets.github.com
+        *.google-analytics.com https://collector-cdn.github.com; style-src 'self'
+        'unsafe-inline' https://gist-assets.github.com; object-src 'none'; report-uri
+        /_/csp_reports
+      Access-Control-Allow-Origin:
+      - https://render.githubusercontent.com
+      Etag:
+      - '"7fb0644f7d8e420c2a076d3a81f19813"'
+      Content-Disposition:
+      - inline
+      Content-Transfer-Encoding:
+      - binary
+      X-Served-By:
+      - 2edabd6bdfd7bd7312378c4cd846997f
+      - github-fe103-cp1-prd.iad.github.net
+      Cache-Control:
+      - private
+      X-Request-Id:
+      - 0f84473a-e6cb-4246-996e-3944f8adf1a1
+      X-Runtime:
+      - '0.018625'
+      X-Github-Request-Id:
+      - 4C7307C2:1EFD:58F8F75:538433BF
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAytKzE7lKkpMzgYAO4i2owkAAAA=
+    http_version: 
+  recorded_at: Tue, 27 May 2014 06:42:08 GMT
+- request:
+    method: get
+    uri: https://gist.githubusercontent.com/1337807/249898536f4e2e8e873a/raw/e796de1b809ca9295dc3f6751b983196f08dd705/gem_watcher_list_2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 27 May 2014 06:42:08 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src *; script-src 'self' render.github.com render.githubusercontent.com
+        https://gist-assets.github.com *.google-analytics.com https://collector-cdn.github.com;
+        frame-src 'self' render.github.com render.githubusercontent.com https://gist-assets.github.com
+        *.google-analytics.com https://collector-cdn.github.com; style-src 'self'
+        'unsafe-inline' https://gist-assets.github.com; object-src 'none'; report-uri
+        /_/csp_reports
+      Access-Control-Allow-Origin:
+      - https://render.githubusercontent.com
+      Etag:
+      - '"d5a5f9cf12d258e11a72eb4cfb1248fe"'
+      Content-Disposition:
+      - inline
+      Content-Transfer-Encoding:
+      - binary
+      X-Served-By:
+      - 2edabd6bdfd7bd7312378c4cd846997f
+      - github-fe103-cp1-prd.iad.github.net
+      Cache-Control:
+      - private
+      X-Request-Id:
+      - 7c35e9ec-94c6-420a-88ac-1a0e3843e79c
+      X-Runtime:
+      - '0.017424'
+      X-Github-Request-Id:
+      - 4C7307C2:1EFC:3EEFD48:538433C0
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAysqLkhN5ipLLgIAI/ZavwkAAAA=
+    http_version: 
+  recorded_at: Tue, 27 May 2014 06:42:08 GMT
+recorded_with: VCR 2.5.0

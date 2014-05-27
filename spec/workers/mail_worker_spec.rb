@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'sidekiq/testing'
 
 describe MailWorker do
-  xit "sends unsent notification" do
+  xit "sends unsent notifications" do
     VCR.use_cassette('mail_worker') do
       notification = Fabricate(:notification, sent: false)
 
