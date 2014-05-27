@@ -46,6 +46,13 @@ ActiveRecord::Schema.define(version: 20140527050256) do
     t.text     "url"
   end
 
+  create_table "notifications", force: true do |t|
+    t.integer  "user_id"
+    t.boolean  "sent"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
