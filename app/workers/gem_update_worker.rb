@@ -1,4 +1,4 @@
-class GemVersionUpdateWorker
+class GemUpdateWorker
   include Sidekiq::Worker
 
   def perform

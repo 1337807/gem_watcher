@@ -15,6 +15,7 @@ gem 'sidekiq'
 gem 'devise'
 gem 'cancan'
 gem 'bootstrap-sass'
+gem 'mailgun'
 
 group :development, :test do
   gem 'capybara'

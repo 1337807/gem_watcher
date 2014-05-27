@@ -21,3 +21,13 @@ module GemWatcher
     # config.i18n.default_locale = :de
   end
 end
+
+ActionMailer::Base.smtp_settings = {
+  :port           => 587,
+  :address        => 'smtp.mailgun.org',
+  :user_name      => 'postmaster@your.mailgun.domain',
+  :password       => 'mailgun-smtp-password',
+  :domain         => 'your.mailgun.domain',
+  :authentication => :plain,
+}
+ActionMailer::Base.delivery_method = :smtp

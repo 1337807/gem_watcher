@@ -103,6 +103,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mailgun (0.8)
+      rest-client
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.6.0)
@@ -148,6 +150,8 @@ GEM
     redis (3.0.7)
     redis-namespace (1.4.1)
       redis (~> 3.0.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -234,6 +238,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
+  mailgun
   poltergeist
   pry
   rails (= 4.1.1)

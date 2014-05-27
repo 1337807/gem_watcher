@@ -1,13 +1,13 @@
 require 'spec_helper'
 require 'sidekiq/testing'
 
-describe GemVersionUpdateWorker do
+describe GemUpdateWorker do
   it "should update a gem with a new version" do
-    VCR.use_cassette('gem_version_update_worker') do
+    VCR.use_cassette('gem_update_worker') do
       gem = Fabricate(:jem, name: 'rake', version: '0.1')
 
       Sidekiq::Testing.inline! do
-        GemVersionUpdateWorker.perform_async
+        GemUpdateWorker.perform_async
       end
 
       gem.reload
